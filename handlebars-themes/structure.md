@@ -61,7 +61,7 @@ Theme templates are hierarchical, so one template can extend another template. T
 `default.hbs` is a base template that contains the boring bits of HTML that exist on every page such as `<html>`, `<head>` or `<body>` as well as the required `{{ghost_head}}` and `{{ghost_foot}}` and any HTML for the header and footer.
 
 #### index.hbs
-This is the standard required template for a list of posts. It is also used if your theme does not have a `tag.hbs`, `author.hbs` or `index.hbs` template. The `index.hbs` template usually extends `default.hbs` and is passed a list of posts using the `{{#foreach}}` helper.
+This is the standard required template for a list of posts. It is also used if your theme does not have a `tag.hbs`, `author.hbs` or `home.hbs` template. The `index.hbs` template usually extends `default.hbs` and is passed a list of posts using the `{{#foreach}}` helper.
 
 #### home.hbs
 An optional template to provide special content for the home page. This template will only be used to render `/`.
